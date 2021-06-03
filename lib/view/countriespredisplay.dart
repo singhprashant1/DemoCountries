@@ -1,9 +1,9 @@
 import 'package:demo/controller/countrycontroller.dart';
-import 'package:demo/homepage.dart';
+import 'package:demo/view/homepage.dart';
 import 'package:demo/model/countryModel.dart';
 import 'package:flutter/material.dart';
 
-import 'SizedBox.dart';
+import '../utility/SizedBox.dart';
 import 'countries.dart';
 
 class CountriesPreDisplay extends StatefulWidget {
@@ -20,6 +20,7 @@ class _CountriesPreDisplayState extends State<CountriesPreDisplay> {
     locationDetailslist = locController.fetchCountry();
     // usertype = UserType().getdata();
   }
+
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);

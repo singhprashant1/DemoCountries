@@ -2,7 +2,7 @@ import 'package:demo/model/countryModel.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'SizedBox.dart';
+import '../utility/SizedBox.dart';
 import 'countriespredisplay.dart';
 
 class CountryDetail extends StatefulWidget {
@@ -53,7 +53,7 @@ class _CountryDetailState extends State<CountryDetail> {
                         text: locdetails.region.toString(),
                         style: TextStyle(
                             color: Colors.black,
-                              fontSize: 20,
+                            fontSize: 20,
                             backgroundColor:
                                 const Color(0xFF0E3311).withOpacity(0.2)),
                         children: <TextSpan>[
@@ -61,7 +61,7 @@ class _CountryDetailState extends State<CountryDetail> {
                             text: '/',
                             style: TextStyle(
                                 color: Colors.black,
-                                  fontSize: 20,
+                                fontSize: 20,
                                 backgroundColor:
                                     const Color(0xFF0E3311).withOpacity(0.2)),
                           ),
@@ -140,7 +140,7 @@ class _CountryDetailState extends State<CountryDetail> {
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(color: Colors.grey)),
                             child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -157,7 +157,7 @@ class _CountryDetailState extends State<CountryDetail> {
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(color: Colors.grey)),
                             child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -179,7 +179,7 @@ class _CountryDetailState extends State<CountryDetail> {
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(color: Colors.grey)),
                             child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
@@ -204,7 +204,6 @@ class _CountryDetailState extends State<CountryDetail> {
                                   "population",
                                   style: TextStyle(color: Colors.grey),
                                 ),
-                      
                                 Text(locdetails.population.toString()),
                               ],
                             ))
